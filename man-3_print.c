@@ -55,7 +55,15 @@ int _printf(const char *format, ...);
 				char_string += len;
 			}
 		}
-
-	}
 		format++;
+	}
+	va_end(args);
+
+	return (char_string);
+}
+
+int main(void);
+{
+	_printf("leo\n");
+	return (0);
 }
